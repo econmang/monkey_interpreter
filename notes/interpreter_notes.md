@@ -1,3 +1,6 @@
+# Interpreters
+
+## Interpreter Structure:
 The interpreter will have 5 major parts:
 - lexer
 - parser
@@ -5,7 +8,7 @@ The interpreter will have 5 major parts:
 - internal object system
 - evaluator
 
-Lexical Analysis:
+## Lexical Analysis:
 
 Transforming source code to tokens is called lexical analysis ("lexing")
 Tokens: Small, easily categorized data structs that are fed to the parser.

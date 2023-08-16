@@ -27,4 +27,21 @@ Lexing Example:
 
 ## Parsing
 
+A parser takes input and builds a data structure (often a parse tree or AST (Abstract Syntax Tree)), normally preceded by a lexical analyzer.
+An example for JS parsing text input and outputting JS object:
+```
+> var input = '{"name": "Thorsten", "age": 28}';
+> var output = JSON.parse(input)
+> output
+{ name: 'Thorsten', age: 28 }
+> output.name
+'Thorsten'
+> output.age
+28
+```
 
+Notes: 
+    - An Abstract Syntax Tree vs a Syntax Tree -- the "abstract" implies that there are some details visible in source omitted in the AST.
+    - There is no universal impl or output for an AST. Most impls are very similar, but there are diffs in the details
+
+Stated succinctly, parsers take input (as text or tokens) and produce a data struct which represents the source code.

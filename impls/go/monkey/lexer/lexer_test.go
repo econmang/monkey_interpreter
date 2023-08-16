@@ -3,7 +3,7 @@
 package lexer
 
 import (
-	"econmang/monkey/interpreter/token"
+	"monkey/token"
 	"testing"
 )
 

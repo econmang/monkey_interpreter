@@ -45,3 +45,11 @@ Notes:
     - There is no universal impl or output for an AST. Most impls are very similar, but there are diffs in the details
 
 Stated succinctly, parsers take input (as text or tokens) and produce a data struct which represents the source code.
+
+
+### Parsing Let Statements
+By parsing the AST and creating methods that check against token type expectations, we are able to handle and store parser errors.
+Instead of exiting when an error occurs, we can abandon the current statement and continue parsing so we don't have to re-run to find
+multiple error
+
+### Parsing Return Statements
